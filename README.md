@@ -1,16 +1,22 @@
-# ninetiassignment
+Project Overview
+User List:Paginated list of users with infinite scroll and real-time search
+Search Bar:Filter users dynamically as you type
+User Details::View user's detailed profile, posts, and todos
+Theme Toggle:Switch between light and dark themes with a button in the app bar
+Create Post UI:Simple UI to simulate post creation.
 
-A new Flutter project.
 
-## Getting Started
+Architecture Explanation
+lib/
+ controller/             # Business logic and BLoC classes
+    userlist_bloc.dart
+ model/                  # Data models (User, Post, Todo)
+   user_model.dart
+ presentation/           # UI layer
+   userlist screen/      # List view, bloc, event, state
+   userdetails/          # User detail view, bloc, event, state
+   main.dart             # App entry point and theme logic
 
-This project is a starting point for a Flutter application.
 
-A few resources to get you started if this is your first Flutter project:
+All Output and Screenshout is in Output folder. 
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
